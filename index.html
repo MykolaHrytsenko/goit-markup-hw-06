@@ -607,10 +607,53 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="#"></form>
-        <input type="text" class="form-input" />
-        <input type="text" class="form-input" />
-        <input type="text" class="form-input" />
+        <form action="#">
+          <div class="form-field">
+            <label for="user-name" class="input-text">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              class="form-input"
+              id="user-name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-tel" class="input-text">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              class="form-input"
+              id="user-tel"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-email" class="input-text">Почта</label>
+            <input
+              type="email"
+              name="user-email"
+              class="form-input"
+              id="user-email"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="user-text" class="input-text">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="input-text"
+              class="form-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <span>Соглашаюсь с рассылкой и принимаю </span>
+            <a href="./">Условия договора</a>
+          </div>
+          <button type="submit" class="modal-submit-btn">Отправить</button>
+        </form>
       </div>
     </div>
 

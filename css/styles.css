@@ -17,6 +17,7 @@
   --portfolio-cart-bg-color: rgba(33, 150, 243, 0.9);
   --backdrop-background-color: rgba(0, 0, 0, 0.2);
   --input-border-color: rgba(33, 33, 33, 0.2);
+  --form-text-color: rgba(117, 117, 117, 0.5);
 }
 
 body {
@@ -226,6 +227,7 @@ address {
   margin-right: auto;
 }
 
+.modal-submit-btn,
 .hero-btn {
   font-family: inherit;
   background: var(--accent-color);
@@ -242,6 +244,8 @@ address {
   transition: background var(--duration-cubic), box-shadow var(--duration-cubic);
 }
 
+.modal-submit-btn:hover,
+.modal-submit-btn:focus,
 .hero-btn:focus,
 .hero-btn:hover {
   background: var(--btn-hover-color);
@@ -615,14 +619,34 @@ address {
   line-height: 1.15;
   text-align: center;
   color: var(--second-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-text,
+.input-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.form-text,
 .form-input {
   width: 100%;
   height: 40px;
   border: 1px solid var(--input-border-color);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 28px;
+  padding: 12px 16px;
+}
+
+.form-text {
+  height: 120px;
+  resize: none;
+  /* color: var(--form-text-color); */
 }
