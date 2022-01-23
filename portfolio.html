@@ -356,7 +356,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer-box">
-        <div class="footer-adress-box">
+        <div class="footer-box-item">
           <a class="link logo" href="./index.html" lang="en"
             >Web<span class="footer-text-color">Studio</span></a
           >
@@ -384,8 +384,8 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h3 class="footer-link-title">присоединяйтесь</h3>
+        <div class="footer-box-item">
+          <p class="footer-link-title">присоединяйтесь</p>
           <ul class="list social-list">
             <li class="social-item">
               <a
@@ -437,24 +437,29 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p class="subscribe-text">Подпишитесь на рассылку</p>
-          <div class="subscribe-wrap">
-            <input
-              type="email"
-              name="subscribe-email"
-              class="subscribe-input"
-              id="subscribe-email"
-              placeholder="E-mail"
-              required
-            />
-            <button type="submit" class="button subscribe-btn">
-              Подписаться
-              <svg class="subscribe-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
+        <div class="footer-box-item">
+          <form action="#">
+            <label for="subscribe-email" class="subscribe-text"
+              >Подпишитесь на рассылку</label
+            >
+            <div class="subscribe-wrap">
+              <input
+                type="email"
+                name="subscribe-email"
+                class="subscribe-input"
+                id="subscribe-email"
+                placeholder="E-mail"
+                required
+              />
+
+              <button type="submit" class="button subscribe-btn">
+                Подписаться
+                <svg class="subscribe-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
