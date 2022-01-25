@@ -711,17 +711,18 @@ address {
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
-  transition: border-color var(--duration-cubic);
+  transition: border var(--duration-cubic);
 }
 
 .form-text:hover,
 .form-input:hover,
 .form-text:focus,
 .form-input:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
-.form-input:hover + .input-icon .form-input:focus + .input-icon {
+.form-input:hover + .input-icon,
+.form-input:focus + .input-icon {
   fill: var(--accent-color);
 }
 
